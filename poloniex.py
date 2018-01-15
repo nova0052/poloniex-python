@@ -39,24 +39,6 @@ def returnLoanOrders(currency):
     return loans.text
 
 #Trading API methods
-tradeUrl = 'https://poloniex.com/tradingApi&command='
-
-'''            req['command'] = command
-            req['nonce'] = int(time.time()*1000)
-            post_data = urllib.urlencode(req)
-
-            sign = hmac.new(self.Secret, post_data, hashlib.sha512).hexdigest()
-            headers = {
-                'Sign': sign,
-                'Key': self.APIKey
-            }
-
-            ret = urllib2.urlopen(urllib2.Request('https://poloniex.com/tradingApi', post_data, headers))
-            jsonRet = json.loads(ret.read())
-            return self.post_process(jsonRet)'''
-
-#let's figure out how to do these calls. first, we need a function. not sure what arguments it needs yet.
-
 
 class account:
     def __init__(self, APIKey, Secret):
